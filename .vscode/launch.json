@@ -1,0 +1,16 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "map reduce seq",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "trace": "verbose",
+            "cwd": "${workspaceFolder}/src/main",
+            "program": "${workspaceFolder}/src/main/debug_mrsequential.go",
+            "args": ["wc.so" ,"pg*.txt"]
+        }
+    ]
+}
