@@ -11,6 +11,25 @@
             "cwd": "${workspaceFolder}/src/main",
             "program": "${workspaceFolder}/src/main/debug_mrsequential.go",
             "args": ["wc.so" ,"pg*.txt"]
+        },
+        {
+            "name": "map reduce worker",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "trace": "verbose",
+            "cwd": "${workspaceFolder}/src/main",
+            "program": "${workspaceFolder}/src/main/debug_mrworker.go",
+        },
+        {
+            "name": "map reduce COORDINATOR",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "trace": "verbose",
+            "cwd": "${workspaceFolder}/src/main",
+            "program": "${workspaceFolder}/src/main/debug_mrcoordinator.go",
+            "args": ["pg*.txt"]
         }
     ]
 }
